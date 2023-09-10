@@ -1,2 +1,2 @@
 #!/bin/bash
-c_file="$CFILE" gcc -E "$c_file" -o c
+c_file="$CFILE" gcc -E "$cfile" -o output.c cat output.c
