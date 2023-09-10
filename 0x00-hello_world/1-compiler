@@ -1,0 +1,9 @@
+#!/bin/bash
+
+CFILE=$1
+
+# Extract the filename without extension
+FILENAME=$(basename "$CFILE" .c)
+
+# Compile the C file without linking
+gcc -c "$CFILE" -o "$FILENAME.o"
