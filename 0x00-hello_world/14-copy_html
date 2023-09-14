@@ -1,2 +1,2 @@
 #!/bin/bash
-cp -u *.html "$(dirname "$(pwd)")"
+cp -u *.html "$(dirname "$(pwd)")" && ls -l "$(dirname "$(pwd)")"/file_0.html
