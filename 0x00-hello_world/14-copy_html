@@ -1,2 +1,0 @@
-#!/bin/bash
-cp -u --parents *.html "$(dirname "$(pwd)")" && ls -l "$(dirname "$(pwd)")/$(basename "$(pwd)")/file_0.html"
