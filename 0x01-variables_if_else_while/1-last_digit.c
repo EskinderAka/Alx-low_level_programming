@@ -3,9 +3,9 @@
 #include <stdio.h>
 
 /**
-* main- prints a text according number
-*
-* Return- success
+ * main - Prints a text according to number
+ *
+ * Return: Always 0.
 */
 
 int main(void)
