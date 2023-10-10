@@ -22,7 +22,7 @@ int main(void)
 		x = y;
 		y = sum;
 		printf("%lu", sum);
-		printf(",");
+		printf(", ");
 	}
 
 	return (0);
