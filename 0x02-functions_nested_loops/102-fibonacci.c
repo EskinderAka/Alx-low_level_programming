@@ -3,19 +3,27 @@
  * By   : Eskinder aka
  */
 #include <stdio.h>
+
 /**
-*main - prints count of multiples
-*of 3 or 5 below 1024
-*Return: return 0
-*/
+ * main - prints the first 50 Fibonacci numbers,
+ * starting with 1 and 2, followed by a new line.
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-int n, sum = 0;
-for (n = 0; n < 1024; n++)
-{
-if ((n % 3) == 0 || (n % 5) == 0)
-sum += n;
-}
-printf("%d\n", sum);
-return (0);
+	unsigned long int count, x, y, sum = 0;
+
+	x = 0;
+	y = 1;
+	for (count = 0; count < 50; count++)
+	{
+		sum = x + y;
+		x = y;
+		y = sum;
+		printf("%lu", sum);
+		printf(",");
+	}
+
+	return (0);
 }
