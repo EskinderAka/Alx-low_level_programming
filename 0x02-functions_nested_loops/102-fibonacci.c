@@ -22,7 +22,12 @@ int main(void)
 		x = y;
 		y = sum;
 		printf("%lu", sum);
-		printf(", ");
+		if (count == 49)
+			putchar('\n');
+		else
+		{
+			printf(", ");
+		}
 	}
 
 	return (0);
