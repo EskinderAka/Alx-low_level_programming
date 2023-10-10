@@ -21,7 +21,7 @@ int main(void)
 		sum = x + y;
 		x = y;
 		y = sum;
-		printf("%lu", sum);
+		printf(sum);
 		printf(",");
 	}
 
