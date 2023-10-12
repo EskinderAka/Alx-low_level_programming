@@ -7,7 +7,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * _isupper - check the code for Holberton School students.
+ * _isupper - checks for uppercase character.
  *@c : variable
  * Return: 0 or 1 .
  */
