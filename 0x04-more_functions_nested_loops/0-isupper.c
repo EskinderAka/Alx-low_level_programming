@@ -2,7 +2,7 @@
  * File : 0-isupper.c
  * By   : Eskinder Aka
  * Task : 0. isupper
-#include "holberton.h"
+#include "main.h"
 #include <stdio.h>
 
 /**
