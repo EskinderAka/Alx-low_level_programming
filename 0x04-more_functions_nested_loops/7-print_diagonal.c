@@ -3,34 +3,34 @@
  * By   : Eskinder Aka
  * Task : 7. I feel like I am diagonally parked in a parallel universe
  */
-
 #include "main.h"
 #include <stdio.h>
 
-/**
-*print_diagonal - prints a diagonal
-*@n:parameter
-*Return:returns nothing
-*/
+/*
+ * print_diagonal - prints a diagonal
+ * @n:parameter
+ * Return : return nothing
+ */
 
 void print_diagonal(int n)
 {
-	int prior, i;
+	int len, space;
 
-	if (n <= 0)
+	if (n > 0)
 	{
-		_putchar('\n');
-		return;
-	}
-	for (i = 0; i < n; i++)
-	{
-		prior = i;
-		while (prior > 0)
+		for (len = 0 ; len < n; len++)
 		{
-			_putchar(32);
-			prior--;
+			for (space = 0; space < len; space++)
+			{
+				_putchar(' ');
+			}
+			_putchar('\\');
+			if (len == (n - 1))
+			{
+				continue;
+			}
+			_putchar('\n');
 		}
 	}
-	_putchar('\\');
-	_putchar('\\');
+	_putchar('\n');
 }
