@@ -1,8 +1,3 @@
-/*
- * File : 1-main.c
- * By   : Eskinder Aka
- * Task : 1. Like, comment, subscribe
- */
 #include <stdio.h>
 
 /**
