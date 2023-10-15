@@ -3,45 +3,41 @@
  * by   : Eskinder Aka
  * Task : 9. Fizz-Buzz
  */
-
-#include "main.h"
 #include <stdio.h>
 
-**
- * main - prints the numbers from 1 to 100
- * 3 multiples print Fizz instead of the number
- * 5 multiples print Buzz instead of the number
- * 3 & 5 multiples print FizzBuzz instead of the number
- * Return: Always 0 (Success)
+/**
+ * main - Entry point
+ *
+ * Return: always 0 (sucess)
  */
-
- int main(void)
+int main(void)
 {
-	int i;
-	char f[] = "Fizz";
-	char b[] = "Buzz";
-	char fb[] = "FizzBuzz";
-	for (i = 1; i <= 100; i++)
+	int num;
+
+	num = 0;
+	while (num < 100)
 	{
-		if (i == 100)
+		num++;
+		if ((num % 3) != 0 && (num % 5) != 0)
 		{
-			printf("%s", b);
+			printf("%d", num);
 		}
-		else if ((i % 3 == 0) && (i % 5 == 0))
+		else if ((num % 3)  == 0 && (num % 5) != 0)
 		{
-			printf("%s", bf);
+			printf("Fizz");
 		}
-		else if (i % 3 == 0)
+		else if ((num % 3) != 0 && (num % 5) == 0)
 		{
-			printf("%s", f);
+			printf("Buzz");
 		}
-		else if (i % 5 == 0)
+		else
 		{
-			printf("%s", b);
+			printf("FizzBuzz");
 		}
-		else 
-		{
-			printf("\n");
-			return (0)
-		}
+		if (num < 100)
+			putchar(32);
 	}
+	putchar('\n');
+	return (0);
+}
+
