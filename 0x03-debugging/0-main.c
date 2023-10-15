@@ -1,14 +1,8 @@
-/*
- * File : 0-main.c
- * By   : Eskinder Aka
- */
 #include "main.h"
-
 /**
 * main - tests function that prints if integer is positive or negative
 * Return: 0
 */
-
 int main(void)
 {
 	int i;
