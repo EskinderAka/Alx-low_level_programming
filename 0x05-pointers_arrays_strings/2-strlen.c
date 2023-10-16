@@ -3,7 +3,7 @@
  * By   : Eskinder Aka
  * Task : 2. This report, by its very length
  */
-include "main.h"
+#include "main.h"
 
 /**
  * _strlen - returns the length of a string
