@@ -4,21 +4,33 @@
 #include "main.h"
 
 /**
- * print_chessboard - prints chessboard.
+ * _strstr - Locates a substring.
+ * @haystack: The string to search.
+ * @needle: The substring to locate.
  *
- * @a: rows.
- * Return: nothing.
+ * Return: A pointer to the beginning of the located substring,
+ *         or NULL if the substring is not found.
  */
-void print_chessboard(char (*a)[8])
+char *_strstr(char *haystack, char *needle)
 {
-	int i, j;
-
-	for (i = 0; i < 8; i++)
+	while (*haystack)
 	{
-		for (j = 0; j < 8; j++)
+		char *begin = haystack;
+		char *pattern = needle;
+
+		/* Find the first character match */
+		while (*haystack && *pattern && *haystack == *pattern)
 		{
-			_putchar(a[i][j]);
+			haystack++;
+			pattern++;
 		}
-		_putchar('\n');
+
+		/* If the entire substring is found, return the starting address */
+		if (!*pattern)
+			return (begin);
+
+		haystack = begin + 1; /* Move to the next character in haystack */
 	}
+
+	return (NULL); /* Substring not found */
 }
