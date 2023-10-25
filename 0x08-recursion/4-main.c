@@ -29,6 +29,5 @@ printf("%d\n", r);
 r = _pow_recursion(50, -2);
 printf("%d\n", r);
 r = _pow_recursion(-8, 5);
-printf("%d\n", r);
 return (0);
 }
