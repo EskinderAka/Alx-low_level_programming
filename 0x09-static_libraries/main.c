@@ -6,6 +6,8 @@
  */
 int main(void)
 {
-_puts("\n"At the end of the day, my goal was to be the best hacker\"\n\t- Kevin Mitnick");
+char quote[] = "\"At the end of the day,
+my goal was to be the best hacker\"\n\t- Kevin Mitnick");
+_puts(quote);
 return (0);
 }
