@@ -1,9 +1,9 @@
 #!/bin/bash
-# Compile each .c file into a corresponding .o file
-gcc -c *.c | grep -v "main.c"
-# Create the static library liball.a from the compiled .o files
-ar -rc liball.a *.o
-# Index the static library
+
+# Compile each .c file into an object file
+gcc -c *.c
+
+# Create the static library
+ar rcs liball.a *.o
 ranlib liball.a
-# Clean up the generated .o files
-rm *.o
+
