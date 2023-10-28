@@ -1,6 +1,6 @@
 #!/bin/bash
 # Compile each .c file into a corresponding .o file
-gcc -c *.c
+gcc -c *.c | grep -v "main.c"
 # Create the static library liball.a from the compiled .o files
 ar -rc liball.a *.o
 # Index the static library
